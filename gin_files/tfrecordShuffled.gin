@@ -1,0 +1,14 @@
+# -*-Python-*-
+
+#from data import TFRecordProvider1
+include 'datasets/base.gin'
+import gin_files.dataShuffle
+
+
+# Make dataset with ddsp/training/data_preparation/ddsp_prepare_tfrecord.py
+# --gin_param="TFRecordProvider.file_pattern='/path/to/dataset*.tfrecord'"
+
+# Dataset
+train.data_provider = @dataShuffle.TFRecordProvider_shuffle()
+evaluate.data_provider = @dataShuffle.TFRecordProvider_shuffle()
+sample.data_provider = @dataShuffle.TFRecordProvider_shuffle()
