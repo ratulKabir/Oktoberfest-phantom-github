@@ -1,7 +1,7 @@
 # DDSP VQ-VAE
+This is a 6 credits team project done by me and two of my fellow students.
 
 # Getting started
-#Old Info:
 - Install the project's requirements using `pip install -r requirements.txt`
 	- We have used ddsp==0.5.1 but I just saw that version 0.10.0 has been published. Our code might work on that newer version but it is also possible that it will not be compatible.
 	- Make sure to use the correct numba version because a too new version caused trouble for us. Might have been fixed in 0.10.0.
